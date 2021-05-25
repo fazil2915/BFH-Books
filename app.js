@@ -88,7 +88,7 @@ passport.deserializeUser(function(id, done) {
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: "https://shielded-crag-73381.herokuapp.com/google/home",
+    callbackURL: "https://shielded-crag-73381.herokuapp.com/auth/google/home",
     userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
   },
   function(accessToken, refreshToken, profile, cb) {
