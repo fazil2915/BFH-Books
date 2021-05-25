@@ -353,7 +353,8 @@ else {
 })
 
 //listening port setup
-var server = http.createServer(app);
-server.listen(3000, (err) => {
-  console.log("port successfully connected")
-});
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+app.listen(port);
