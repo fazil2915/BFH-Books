@@ -7,17 +7,16 @@ font-family: "Poppins", sans-serif;
   background-color: #132c33;
   text-align: center;
   justify-content: center;
-  padding: 10px 10px;
+  padding: 13px 11px;
   border-radius: 8px;
 }
 
   .heading a {
-    position: absolute;
   }
 
 .heading h1 {
   color: #fdfaf6;
-  font-size: 30px;
+  font-size: 2em;
   margin-right: 20px;
   text-shadow: 2px 2px 4px #000000;
 }
