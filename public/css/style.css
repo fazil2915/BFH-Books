@@ -2,6 +2,25 @@
 font-family: "Poppins", sans-serif;
 }
 
+.heading {
+  position: relative;
+  background-color: #132c33;
+  text-align: center;
+  justify-content: center;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+
+  .heading a {
+    margin-top: 6px;
+  }
+
+.heading h1 {
+  color: #fdfaf6;
+  margin-right: 20px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
 /* <!-- Star Rating -->
 
 html,body{
@@ -144,6 +163,10 @@ input:checked ~ form{
   padding: 1rem 8rem;
   z-index: 1000;
    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3)
+}
+
+.navbar-brand {
+  color: white;
 }
 
 .hello {
@@ -8543,7 +8566,7 @@ textarea.form-control {
     * { box-sizing: border-box; }
 
   /* .container {
-     
+
       display: flex;
       flex-wrap: wrap;
       height: 100vh;
@@ -8552,8 +8575,8 @@ textarea.form-control {
       padding: 0 20px;
     } */
 
-    
-    
+
+
     .rating {
       display: flex;
       width: 100%;
@@ -8561,18 +8584,18 @@ textarea.form-control {
       overflow: hidden;
       flex-direction: row-reverse;
       height: 150px;
-      
+
       position: relative;
     }
-    
+
     .rating-0 {
       filter: grayscale(100%);
     }
-    
+
     .rating > input {
       display: none;
     }
-    
+
     .rating > label {
       cursor: pointer;
       width: 40px;
@@ -8584,18 +8607,18 @@ textarea.form-control {
       background-size: 76%;
       transition: .3s;
     }
-    
+
     .rating > input:checked ~ label,
     .rating > input:checked ~ label ~ label {
       background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
     }
-    
-    
+
+
     .rating > input:not(:checked) ~ label:hover,
     .rating > input:not(:checked) ~ label:hover ~ label {
       background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
     }
-    
+
     .emoji-wrapper {
       width: 100%;
       text-align: center;
@@ -8605,7 +8628,7 @@ textarea.form-control {
       top: 0;
       left: 0;
     }
-    
+
     .emoji-wrapper:before,
     .emoji-wrapper:after{
       content: "";
@@ -8615,37 +8638,37 @@ textarea.form-control {
       left: 0;
       z-index: 1;
     }
-    
+
     .emoji-wrapper:before {
       top: 0;
       background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,0) 100%);
     }
-    
+
     .emoji-wrapper:after{
       bottom: 0;
       background: linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,0) 100%);
     }
-    
+
     .emoji {
       display: flex;
       flex-direction: column;
       align-items: center;
       transition: .3s;
     }
-    
+
     .emoji > svg {
-      margin: 15px 0; 
+      margin: 15px 0;
       width: 70px;
       height: 70px;
       flex-shrink: 0;
     }
-    
+
     #rating-1:checked ~ .emoji-wrapper > .emoji { transform: translateY(-100px); }
     #rating-2:checked ~ .emoji-wrapper > .emoji { transform: translateY(-200px); }
     #rating-3:checked ~ .emoji-wrapper > .emoji { transform: translateY(-300px); }
     #rating-4:checked ~ .emoji-wrapper > .emoji { transform: translateY(-400px); }
     #rating-5:checked ~ .emoji-wrapper > .emoji { transform: translateY(-500px); }
-    
+
     .feedback {
       max-width: 360px;
       background-color: #fff;
@@ -8661,7 +8684,7 @@ textarea.form-control {
     }
 .re{
   margin-top: 1em;
-}    
+}
 
 .log-out {
   margin-top: 10px;
@@ -8671,7 +8694,7 @@ textarea.form-control {
   margin-left: 6px;
   border-radius: 10px;
   text-align: center;
-  
+
   }.log-out:hover {
     opacity: 0.7;
 }
@@ -8679,7 +8702,7 @@ textarea.form-control {
   fa, .fas {
     font-weight: 900;
     color: black;
-    
+
 }
 
 /* star
