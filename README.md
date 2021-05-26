@@ -4,9 +4,9 @@
 # Bookify
 
 ## Team members
-1. Hibathulla Cm [Embed personal github URL]
-2. Vinubalagopal AP [Embed perosnal github URL]
-3. Fazil Rahman AP [Embed perosnal github URL]
+1. Hibathulla Cm [https://github.com/Hibathulla]
+2. Vinubalagopal AP [https://github.com/VinuBalagopalAP]
+3. Fazil Rahman AP [https://github.com/fazil2915]
 ## Team Id
 BFH/recrxXu9TNwamOBNB/2021
 ## Link to product walkthrough
