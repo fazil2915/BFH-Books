@@ -8391,6 +8391,7 @@ h1, h2, h3, h4, h5,
   background: #01d28e !important; }
 
 .ftco-section {
+  background-image: url(book.jpg);
   padding: 7em 0; }
 
 .ftco-no-pt {
