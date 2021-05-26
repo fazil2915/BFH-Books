@@ -39,9 +39,11 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 //mongoose connection
- mongoose.connect("mongodb+srv://book1234:book2021@cluster0.y2gry.mongodb.net/test", {
+ mongoose.connect('mongodb+srv://book1234:book2021@cluster0.y2gry.mongodb.net/test', {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+  bufferCommands: false,
+    useFindAndModify: false
 }, ()=>
  console.log('db connected'),);
 mongoose.set('useCreateIndex', true);
@@ -271,7 +273,7 @@ app.get("/home/:id", function(req, res) {
   if (req.isAuthenticated()) {
     console.log(req.user.id);
 const name = req.params.id;
-Book.findOne({booktitle: name}, function(err, found) {
+Book.findOne({booktitle: req.params.id}, function(err, found) {
    res.render("viewpage", {img: found.url, title: found.booktitle, author: found.bookauthor, genre: found.genre, content: found.bookContent, link: found.link})
 })
   }
