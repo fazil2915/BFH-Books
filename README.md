@@ -6,7 +6,7 @@ A book review platform where we can explore, add , review and buy books!
 ## Team members
 1. Hibathulla Cm [https://github.com/Hibathulla]
 2. Vinubalagopal AP [https://github.com/VinuBalagopalAP]
-3. Fazil Rahman AP [https://github.com/fazil2915]
+3. Fazil Rahman P [https://github.com/fazil2915]
 ## Team Id
 BFH/recrxXu9TNwamOBNB/2021
 ## Link to product walkthrough
