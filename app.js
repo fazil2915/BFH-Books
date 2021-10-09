@@ -39,7 +39,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 //mongoose connection
- mongoose.connect('mongodb+srv://book1234:book2021@cluster0.y2gry.mongodb.net/test', {
+ mongoose.connect(process.env.Mongoose, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   bufferCommands: false,
